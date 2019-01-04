@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# Access JSON file from Web and process
+# ----------------------------------------------------------------------------
+# Purpose : Demonstrating accessing JSON data from URL and processing.
+# Author:       Denny Vettom
+# Dependencies: PYTHON 3
+#
 
 import json
 import ssl #For managing SSL certificate and ingnore errors
