@@ -23,6 +23,7 @@ argparser.add_argument('--elb', nargs='+', help='Name/s of Aws ELB seperated by 
 argparser.add_argument('vpc', help="A positional argument if defined must be profided")
 
 
+
 args = argparser.parse_args()
 print("")
 # Below variable check generally works, but in argparse case variable set to type None, so cannot be used
@@ -32,6 +33,9 @@ except: print ("region Not defined")
 # Use if statement to check if Region is defined or not
 if args.region is None:  # None is type NULl in Python not a value in variable.
     print("Regions is defined as None")
+    # If required variable not defined, print help and exit.
+    argparser.print_help()
+    exit()
 
 # Processing Variable examples
 print ("Action is:", args.action, ":: Profile:", args.profile,":: Region is :", args.region, ":: VPC is:", args.vpc)
