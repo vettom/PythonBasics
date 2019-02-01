@@ -10,7 +10,7 @@ import argparse
 
 # Use argparse to accept and validate user input
 # Below line description displayed when user run -h for help
-argparser = argparse.ArgumentParser(description='Text to display when -H option used for')
+argparser = argparse.ArgumentParser(description='Text to display when -H option used for', epilog='Text to display under help section')
 # Below demonstration of optional smaller argumen. Also defining it as required value
 argparser.add_argument('-a', '--action', help='Instance action to be performed list/status/', required=True)
 # Below option acceps profile argument and if not provided defaults to value "default"
