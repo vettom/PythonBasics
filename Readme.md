@@ -7,5 +7,5 @@
 - get-started-loops-classes : Operation like loops, conditions, classes etc
 - Readwrite-file     : Read write append to file
 - shell_filehandling : Common shell commands with files
-- parse_input_arguments : Example of argparse to accept input arguments
+- argparse_basic.    : Example of argparse to accept input arguments
 
