@@ -14,7 +14,7 @@ import time
 
 
 def main():
-    Starttime = time.strftime('%Y-%m-%dT%H:%M:%S %Z')
+    Starttime = time.strftime('%Y-%m-%dT%H:%M:%S %Z')   
     VAR = "Some information"
     print (Starttime, VAR + " This is comment" + VAR)
     print (" ------- This is Main Function ")

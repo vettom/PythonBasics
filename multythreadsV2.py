@@ -14,6 +14,15 @@ from queue import Queue
 import time
 
 
+"""
+Simplified version where thread calls the function direct and examplejob gets data from queue and process it.
+There is a worker loop to add 20 values to queue q for the threads to consume.
+Threaders starts 5 threads and each calling example job.
+Examplejob reads data from the queue and process it.
+q.join ensure all data in queue is processed befoe exit.
+"""
+
+# Defining print lock so that each thread can do complete print than mix up data.
 print_lock = threading.Lock()
 
 def exampleJob():
