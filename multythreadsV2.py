@@ -41,7 +41,7 @@ q = Queue()
 start = time.time()
 
 # Work load, adding some data to queue for the threads to process. 
-for worker in range(20):
+for worker in range(27):
     q.put(worker)
 
 # Define the number of threads. This section starts number of threads specified and each calls Target function.
