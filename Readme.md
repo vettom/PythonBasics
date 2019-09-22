@@ -1,4 +1,6 @@
-# Python - Basic scripts for beginner
+# Python - Basic scripts for beginner ![alt text](https://vettom.github.io/images/Robin2cm.png "Denny Vettom Logo")
+
+# ![alt text](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo") Script details 
 
 - multythreadsV1.py  : Simple mult threading example with queue
 - multythreadsV2.py  : Simplified task of processing completed queue
