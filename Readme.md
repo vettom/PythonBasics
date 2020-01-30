@@ -4,6 +4,16 @@
 
   Collection of simple Pythong biggeners scripts explaining some of the basic functions and use cases. I have created this for my own reference and has comments with in script to explain further.
 
+# Development Principle
+```
+A - Accuracy 
+B - Best Practices
+C - Consistency 
+D - Documentation
+E - Exception Handling
+F - Failure test
+```
+
 # ![alt text](https://vettom.github.io/images/dv-tec-logo-round2cm.png "Denny Vettom  Tech Logo") Script details 
 
 - [multythreadsV1.py](https://github.com/vettom/PythonBasics/blob/master/multythreadsV1.py)  : Simple mult threading example with queue
