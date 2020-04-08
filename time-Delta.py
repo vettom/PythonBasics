@@ -14,17 +14,21 @@ import time
 
 
 def main():
-    Starttime = time.strftime('%Y-%m-%dT%H:%M:%S %Z')   
-    VAR = "Some information"
-    print (Starttime, VAR + " This is comment" + VAR)
-    print (" ------- This is Main Function ")
+    # Starttime = time.strftime('%Y-%m-%dT%H:%M:%S %Z')   
+    # VAR = "Some information"
+    # print (Starttime, VAR + " This is comment" + VAR)
+    # print (" ------- This is Main Function ")
 
     # Basic time delta print
     # print(timedelta(days=365, hours=5, minutes=12))
 
     # # Print todays date
-    # now=datetime.now()
-    # print("Today is :" + str(now))
+    Yday = '2020-04-05 10:58:49.281262'
+    now = datetime.datetime.now()
+    print("Today is :" + str(now))
+
+    Diff = datetime.datetime.strptime(now) - datetime.datetime.strptime(Yday)
+    print (Diff)
 
     # Print todays date year from now
     # print("Year Today=" + str(now + timedelta(days=365)))
