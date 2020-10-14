@@ -16,17 +16,24 @@ Formating of output log and Date format
 %(levelno)d      : Numeric of log level
 %(lineno)d       : Line number where logging call was issued
 %(message)s      : Logged message string
-%(module)s       : module name portion of the file 
+%(module)s       : module name portion of the file
+
+filename : Defines file to store logs
+filemode : Default is append. Configure if need overwrite at each run
+level : Defined what is level
+format : Defines formatting of output message
+datefmt:  define format of date
+
 """
 
 import logging
 
 def main():
-    # Define format string
+    # # Define format string
     formatstr = "%(asctime)s: %(levelname)s: %(funcName)s Line:%(lineno)d %(message)s "
     datestr = "%m/%d/%Y %I:%M:%S %p"
 
-    logging.basicConfig(filename="output.log", level=logging.DEBUG,
+    logging.basicConfig(filename="output.log", level=logging.DEBUG, 
                         filemode="w", format=formatstr, datefmt=datestr)
 
     # Simple logging some message to file
@@ -37,4 +44,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main() 
