@@ -24,7 +24,9 @@ def myFunc(Arg):
       Arg = First argument expected
 
     '''
-    
+
+# To print help for a function if it is included. 
+# To add help, immediately after function start, add necessary help topic in 3 tics
 print(myFunc.__doc__)
 
 # Print help for argparse

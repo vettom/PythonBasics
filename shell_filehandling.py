@@ -23,17 +23,17 @@ def main():
         DST = SRC + ".bak"
 
         # Copy over the permissions, mod times and other info
-        # shutil.copy(SRC, DST)
-        # shutil.copystat(SRC, DST)
+        shutil.copy(SRC, DST)
+        shutil.copystat(SRC, DST)
 
         # Rename original file
-        # os.rename("testfile.txt", "newfile.txt")
+        os.rename("testfile.txt", "newfile.txt")
 
         # Put things in to Zip archive.
 
          # Now put things to archive
-        # root_dir, tail = path.split(SRC)
-        # shutil.make_archive("archive", "zip", root_dir)
+        root_dir, tail = path.split(SRC)
+        shutil.make_archive("archive", "zip", root_dir)
 
         # Backup specific file
         with ZipFile("testzip.zip" , "w") as newzip:

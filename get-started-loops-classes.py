@@ -64,18 +64,18 @@ def main():
 
 #**** Conditional structure
 
-# x, y = 200, 20
-# if (x < y):
-#     result="X less than Y"
-# elif(x > y):
-#     result="X greater than Y"
-# else:
-#     result="X and Y are same"
-# print(result)
+x, y = 200, 20
+if (x < y):
+    result="X less than Y"
+elif(x > y):
+    result="X greater than Y"
+else:
+    result="X and Y are same"
+print(result)
 
 #Print conditional in single line
-# result="X is greate than y" if(x > y) else "Y greater tha X"
-# print(result)
+result="X is greate than y" if(x > y) else "Y greater tha X"
+print(result)
 
 
 # **** LOOPS
